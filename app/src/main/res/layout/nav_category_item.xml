@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="7dp"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="5dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/cat_nav_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/profile"
+            android:layout_marginLeft="10dp"
+            app:civ_border_color="#FFFFFF"
+            app:civ_border_width="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/nav_cat_name"
+            android:layout_width="300dp"
+            android:layout_height="25dp"
+            android:text="Hola"
+            android:textSize="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/profile_img_usu"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/border"
+            android:scaleType="centerInside"
+            android:src="@drawable/terapeutica"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="-360dp"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textnameusu"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="38dp"
+                android:fontFamily="@font/alice"
+                android:text="Nombre"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/nav_cat_description"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="90dp"
+                android:ellipsize="end"
+                android:textSize="17dp"
+                android:fontFamily="@font/alice"
+                android:maxLines="3"
+                android:singleLine="false"
+                android:text="Descripcion"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:id="@+id/nav_cat_discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="-31dp"
+                android:fontFamily="@font/alice"
+                android:textColor="@color/purple_700"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/btnngro"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/ic_baseline_favorite_border_24"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/btnrojo"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/ic_baseline_favorite_24"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/like_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:hint="Likes"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/editicon"
+                    android:layout_width="113dp"
+                    android:layout_height="23dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="13dp"
+                    android:src="@drawable/ic_baseline_edit_24"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/deleteicon"
+                    android:layout_width="113dp"
+                    android:layout_height="23dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="13dp"
+                    android:src="@drawable/ic_baseline_delete_24"
+                    android:visibility="gone" />
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-5dp"
+                    android:layout_weight="1"
+                    android:numStars="5"
+                    android:rating="0"
+                    android:scaleX=".7"
+                    android:scaleY=".7"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="58dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="15sp" />
+
+
+                <TextView
+                    android:id="@+id/like_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="-10sp"
+                    android:layout_marginTop="9sp"
+                    android:hint="Lk: "
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10sp"
+                    android:hint="Li"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

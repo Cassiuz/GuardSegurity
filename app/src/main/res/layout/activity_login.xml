@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.LoginActivity"
+    android:orientation="vertical"
+    android:background="@drawable/fondo"
+    android:padding="20dp">
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="10dp"
+    android:fontFamily="@font/alfa"
+    android:text="INICIAR SESION"
+    android:textColor="#00BEF8"
+    android:textSize="30sp" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="185dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/loglogin"
+        android:transitionName="logo_image" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email_login"
+            android:layout_marginTop="30sp"
+            android:layout_marginBottom="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/txtlogin_register"
+                android:hint="Correo Electrónico"
+                android:padding="13dp"
+                android:drawableLeft="@drawable/ic_baseline_email_24"
+                android:drawablePadding="10dp"
+                android:inputType="textEmailAddress">
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password_login"
+            android:layout_marginTop="2sp"
+            android:layout_marginBottom="10dp"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contraseña"
+                android:padding="13dp"
+                android:drawablePadding="10dp"
+                android:background="@drawable/txtlogin_register"
+                android:inputType="textPassword"></com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="55dp">
+
+            <RadioButton
+                android:id="@+id/rbsesion"
+                android:hint="No Cerrar Sesion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="#0191FF"
+                android:layout_gravity="center_vertical"/>
+
+            <Button
+                android:id="@+id/btnSendToResetPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="0dp"
+                android:background="#00000000"
+                android:textColor="#FF0101"
+                android:elevation="0dp"
+                android:text="¿Has olvidado tu contraseña?" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingresar"
+            android:background="#2B86CC"
+            android:textColor="#fff"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/acceso_btn"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="5dp"
+            android:background="#00000000"
+            android:elevation="0dp"
+            android:text="¿Nuevo Usuario? Registrar"
+            android:textColor="#FFFFFF"
+            android:id="@+id/sing_up"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/koulen"
+        android:text="Lider en seguridad "
+        android:textColor="#00BEF8"
+        android:textSize="30sp" />
+
+</LinearLayout>

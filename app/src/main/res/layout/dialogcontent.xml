@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="450dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Actualizar Categorias"
+        android:background="@color/empresa"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textColor="#fff"/>
+
+    <EditText
+        android:id="@+id/uimgurl"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Cargar Imagen"
+        android:background="@drawable/roundetaill"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/uname"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="25dp"
+        android:text="Nuevo Nombre"
+        android:background="@drawable/roundetaill"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/udescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="25dp"
+        android:text="Nuevo Cargo"
+        android:background="@drawable/roundetaill"
+        android:gravity="center"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:id="@+id/udescuento"/>
+    
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Actualizar"
+        android:id="@+id/usubmit"
+        android:background="@color/empresa"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+</LinearLayout>
